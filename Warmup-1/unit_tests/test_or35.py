@@ -3,7 +3,7 @@ import sys
 sys.path.insert(0,'..')
 from or35 import *
 
-class TestBackAround(unittest.TestCase):
+class TestOr35(unittest.TestCase):
     def test_for_zero(self):
         n = 0
         self.assertFalse(or35(n))
