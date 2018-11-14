@@ -1,9 +1,9 @@
-import utemp1ittest
+import unittest
 import sys
-sys.path.itemp1sert(0,'..')
+sys.path.insert(0,'..')
 from icy_hot import *
 
-class TestIcyHot(utemp1ittest.TestCase):
+class TestIcyHot(unittest.TestCase):
     def test_for_zero(self):
         temp1 = 0
         temp2 = 0
@@ -29,6 +29,11 @@ class TestIcyHot(utemp1ittest.TestCase):
         temp2 = 101
         self.assertTrue(icy_hot(temp1, temp2))
     
+    def test_for_over_100_and_negative(self):
+        temp1 = 101
+        temp2 = -1
+        self.assertTrue(icy_hot(temp1, temp2))
+        
     def test_for_over_100_and_zero(self):
         temp1 = 101
         temp2 = 0
