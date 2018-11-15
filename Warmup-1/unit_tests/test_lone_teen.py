@@ -9,12 +9,12 @@ class TestLoneTeen(unittest.TestCase):
         num2 = 0
         self.assertFalse(lone_teen(num1, num2))
 
-    def test_for_zeros_and_1teen(self):
+    def test_for_teen_and_zero(self):
         num1 = 15
         num2 = 0
         self.assertTrue(lone_teen(num1, num2))
 
-    def test_for_zeros_and_2teen(self):
+    def test_for_zero_and_teen(self):
         num1 = 0
         num2 = 15
         self.assertTrue(lone_teen(num1, num2))
@@ -37,6 +37,16 @@ class TestLoneTeen(unittest.TestCase):
     def test_for_ending_teen(self):
         num1 = 19
         num2 = 34
+        self.assertTrue(lone_teen(num1, num2))
+
+    def test_for_larger_and_teen(self):
+        num1 = 24
+        num2 = 14
+        self.assertTrue(lone_teen(num1, num2))
+
+    def test_for_teen_and_larger(self):
+        num1 = 14
+        num2 = 24
         self.assertTrue(lone_teen(num1, num2))
 
     def test_for_both_teens(self):
