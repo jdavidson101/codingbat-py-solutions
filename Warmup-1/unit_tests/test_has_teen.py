@@ -3,7 +3,7 @@ import sys
 sys.path.insert(0,'..')
 from has_teen import *
 
-class Testhas_teen(unittest.TestCase):
+class TestHasTeen(unittest.TestCase):
     def test_for_zeros(self):
         num1 = 0
         num2 = 0
