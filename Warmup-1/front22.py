@@ -2,8 +2,4 @@
 so "kitten" yields"kikittenki". If the string length is less than 2, use whatever chars are there.'''
 
 def front22(str):
-    if len(str) <= 2:
-        str = str + str + str
-    else:
-        str = str[:2] + str + str[:2]
-    return str
+    return str[:2] + str + str[:2]

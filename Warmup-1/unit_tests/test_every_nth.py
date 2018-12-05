@@ -20,7 +20,7 @@ class TestEveryNth(unittest.TestCase):
         num = 2
         self.assertEqual("ct", every_nth(string, num))
 
-    def test_for_with_whitespace_at_num_index(self):
+    def test_for_whitespace_at_num_index(self):
         string = " ha bi t"
         num = 3
         self.assertEqual("   ", every_nth(string, num))

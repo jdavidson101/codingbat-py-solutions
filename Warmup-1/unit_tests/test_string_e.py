@@ -20,6 +20,10 @@ class TestStringE(unittest.TestCase):
         string = "hehehe"
         self.assertTrue(string_e(string))
 
+    def test_for_four_e(self):
+        string = "beeeeat"
+        self.assertFalse(string_e(string))
+
     def test_for_many_e(self):
         string = "eeeeeeeeeee"
         self.assertFalse(string_e(string))

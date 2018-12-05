@@ -25,7 +25,7 @@ class TestOr35(unittest.TestCase):
         self.assertTrue(or35(n))
 
     def test_for_large_multiple(self):
-        n = 3**10
+        n = 5**10
         self.assertTrue(or35(n))
 
     def test_for_small_prime(self):
