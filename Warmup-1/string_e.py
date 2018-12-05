@@ -1,5 +1,6 @@
-'''Given a string, take the last chr and return a new string with the last char added at the front and back, 
-so "cat" yields "tcatt". The original string will be length 1 or more.'''
+#Return true if the given string contains between 1 and 3 'e' chars.
 
-def back_around(str):
+def string_e(str):
+    count = str.count('e')
+    return True if count >= 1 and count <= 3 else False
     
