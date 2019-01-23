@@ -5,3 +5,19 @@ def start_oz(str):
     if len(str) > 1 and str[0] == 'o':
         return 'oz' if str[1] == 'z' else 'o'
     return str[:2]
+
+''' codingbat test cases
+"ozymandias", "oz"
+"bzoo", "z"
+"oxx", "o"
+"", ""
+"h", "h"
+"oz", "oz"
+"of", "o"
+"oz the wizard", "oz"
+" hi", " h"
+"Of", "Of"
+"oZ", "o"
+'''
+
+#difficulty:166

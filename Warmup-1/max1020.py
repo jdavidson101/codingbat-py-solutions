@@ -8,3 +8,21 @@ def max1020(a, b):
             return a if a > b else b
         return a if range_a else b
     return 0
+
+''' codingbat test cases
+11, 19, 19
+10, 21, 10
+9, 21, 0
+0, 0, 0
+0, 15, 15
+15, 0, 15
+20, 0, 20
+9, 20, 20
+17, 24, 17
+60000, 14, 14
+21, 60000, 0
+17, 19, 19
+19, 17, 19
+'''
+
+#difficulty:178
