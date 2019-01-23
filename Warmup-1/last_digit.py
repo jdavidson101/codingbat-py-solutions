@@ -2,4 +2,4 @@
 # Note that the % "mod" operator computes remainders, so 17 % 10 is 7.
 
 def last_digit(a, b):
-    return True if a % 10 == b % 10 else False
+    return a % 10 == b % 10

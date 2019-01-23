@@ -12,11 +12,11 @@ class TestStartOz(unittest.TestCase):
         string = "h"
         self.assertEqual(string, start_oz(string))
 
-    def test_for_orz(self):
+    def test_for_oz(self):
         string = "oz"
         self.assertEqual(string, start_oz(string))
 
-    def test_for_hi(self):
+    def test_for_no_z(self):
         string = "of"
         self.assertEqual(string[0], start_oz(string))
 

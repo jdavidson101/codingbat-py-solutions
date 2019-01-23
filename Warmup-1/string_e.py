@@ -2,5 +2,5 @@
 
 def string_e(str):
     count = str.count('e')
-    return True if count >= 1 and count <= 3 else False
+    return count >= 1 and count <= 3
     
